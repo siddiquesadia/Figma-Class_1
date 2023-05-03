@@ -1,0 +1,168 @@
+/* Common Class Start */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #353535;
+}
+
+.container{
+    width: 1110px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+:root{
+    --primaryFont:'Poppins', sans-serif;
+    --secondaryFont:'PT Sans', sans-serif;
+    --PrimaryColor: #353535;
+    --secondaryColor: #7A7A7A;
+    --buttonColor:#FFCC00;
+    --bg-gradiant:linear-gradient(95.13deg, #FFCC00 -21.46%, #FFF5CB 112.13%);
+}
+
+body{
+    font-family: var(--primaryFont);
+    color: var(--PrimaryColor);
+}
+
+.align-center{
+    align-items: center;
+}
+
+.button{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 25px 45px;
+    display: inline-block;
+    margin-top: 48px;
+    font-weight: 500;
+font-size: 20px;
+    
+}
+
+.button:hover{
+    background-color: var(--buttonColor);
+    color: white;
+    border: none;
+    
+}
+
+.button:hover i{
+    color: white;
+}
+/* Common Class End */
+
+/* navbar start*/
+.logo{
+    width: 30%;
+}
+
+.menu{
+    width: 70%;
+}
+.menu ul{
+    text-align: right;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+.menu ul li a{
+    padding: 27px 21px 15px 21px ;
+    display: inline-block;
+    position: relative;
+}
+
+.menu ul li a::before{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: var(--PrimaryColor);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.menu ul li:hover a::before{
+width: 100%;
+}
+
+/* navbar end*/
+
+/* Banner section start */
+#banner{
+    margin-top: 70px;
+}
+
+#banner .banner-text{
+    width: 55%;
+}
+#banner .banner-img{
+    width: 45%;
+}
+
+.banner-text h5{
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 400;
+
+}
+
+.banner-text h1{
+font-weight: 700;
+font-size: 64px;
+}
+
+.banner-text p{
+    font-weight: 400;
+font-size: 20px;
+width: 625px;
+height: 108px;
+line-height: 36px;
+margin-top: 30px;
+}
+
+
+.banner-text .follow{
+    width: 25%;
+    margin-top: 77px;
+}
+
+.banner-text .follow-icon{
+width: 75%;
+margin-top: 77px;
+}
+
+.banner-text ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+.follow-icon ul li a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(244, 243, 244, 0.7);
+}
+
+
+/* Banner section end */
